@@ -1,15 +1,21 @@
 # Neural Network Framework from Scratch
 
 ## Introduction
-This repository contains a neural network framework implemented from scratch, focusing on efficient computation using matrix operations without explicit loops. The key objective is to understand and verify the neural network architecture through gradient and Jacobian tests, ensuring mathematical correctness in forward and backward propagation.
+This repository contains a neural network framework implemented entirely from scratch, focusing on efficient computation using matrix operations without explicit loops.  
+The goal is to deeply understand neural network internals and mathematically verify correctness using **gradient** and **Jacobian** tests.  
+The framework supports both **Standard Fully Connected Networks** and **ResNet-style skip connections**.
+
+---
 
 ## Key Features
-- **Matrix-Based Computation:** Avoids explicit loops for efficiency.
-- **Gradient and Jacobian Verification:** Ensures the correctness of the backpropagation.
-- **Support for Standard and ResNet Architectures:** Implements both fully connected and residual networks.
-- **SGD Optimization with Momentum:** Provides efficient optimization using Stochastic Gradient Descent.
-- **Automatic Differentiation Verification:** Uses gradient testing to validate computations.
-- **Integrated Testing:** The framework verifies different components together to ensure correctness in full training runs.
+- **Matrix-Based Computation:** Efficient forward and backward propagation using NumPy, avoiding explicit loops.
+- **Gradient & Jacobian Verification:** Ensures correctness of all derivatives.
+- **Standard & ResNet Architectures:** Supports deep, wide, and residual networks.
+- **SGD with Momentum:** Stable optimization for deep models.
+- **Automatic Differentiation Testing:** Zero-order and first-order Taylor checks.
+- **Integrated End-to-End Testing:** Ensures correctness of the entire training pipeline.
+
+---
 
 ## Installation
 Clone the repository and ensure you have NumPy and Matplotlib installed:
